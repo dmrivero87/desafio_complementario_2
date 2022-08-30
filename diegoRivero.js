@@ -1,91 +1,25 @@
+let edad_ingresada = parseInt( prompt("Sabes cual es mi edad? Ingrese un numero del 1 al 99"));
 
+while (edad_ingresada != 34) {
+    if( edad_ingresada >= 1 && edad_ingresada <=12 ){
 
-
-let precio_final = 0 
-
-class Usuario{
-    constructor(nombre,apellido,doc_id,direccion){
-
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.doc_id = doc_id;
-        this.direccion = direccion;
-    }
+  edad_ingresada = prompt("No soy un niño, ingresa un numero mayor");
+  }
+  else if (edad_ingresada >=13 && edad_ingresada <= 18) {
+    edad_ingresada = prompt("No soy un adolescente, ingrersa un numero mayor");
+  }
+  else if ( edad_ingresada >=19 && edad_ingresada <=33 ){
+    edad_ingresada = prompt ("Estas cerca, ingresa una edad mayor");
+  }
+  else if (edad_ingresada >=35 && edad_ingresada <= 49){
+    edad_ingresada = prompt ("Estas cerca, ingresa una edad menor");
+  }
+  else if ( edad_ingresada >= 50 && edad_ingresada <= 99 ){
+    edad_ingresada = prompt("Epa!! no soy tan anciano, ingresa una edad menor")
+  }
+  else{
+    edad_ingresada = prompt("Ingresaste un numero incorrecto, Ingresa un numero del 1 al 99")
+  }
 }
 
-class Pedido{
-    constructor (articulo, talle, precio, cantidad, total_pedido){
-
-      
-        this.articulo = articulo;
-        this.talle = talle;
-        this.precio = precio;
-        this.cantidad = cantidad;
-        this.total_pedido = total_pedido;
-    }
-
-}
-
-
-function nuevo_pedido(){
-    let registro_pedido =[];{
-  
-        for (let i= 1 ; i<=10; i++){ //Arranco el cliclo en 1 para poder enumerar las compras
-            let articulo = prompt("Ingrese el articulo a comprar en tu pedido numero " + i);
-            let talle = prompt("Ingrese el talle de " + articulo);
-            let precio = parseInt( prompt("Ingrese el precio de " + articulo));
-            let cantidad = parseInt( prompt("Ingrese cantidad del articulo"));
-            let total_pedido = (precio * cantidad)
-            precio_final = total_pedido + precio_final
-    
-            let nuevo_pedido = new Pedido(articulo, talle, precio, cantidad, total_pedido);
-        
-            registro_pedido.push( nuevo_pedido );
-            console.log(registro_pedido);
-    
-            let siguiente= prompt ("Desea seguir comprando? Si o NO?")
-                if (siguiente == "SI" || siguiente == "si" || siguiente == "Si"){
-                    continue
-                }
-                else if(siguiente == "NO" || siguiente == "no" || siguiente == "No") {
-                    break
-                } else (siguiente = prompt("No has ingresado una opcion valida. Ingresa Si o NO "))
-        }
-    
-    }
-}
-
-let registro = prompt("Bienvendido a la tienda oficial de C.A. Aguada. Desea registrarse? Si o No?")
-
-    if (registro == "SI" || registro == "si" || registro == "Si"){
-
-
-        let registro_usuario = [];{
-
-            let nombre = prompt("Ingrese su nombre");
-            let apellido = prompt("ingrese su apellido");
-            let doc_id = prompt("Ingrese su documento de identidad");
-            let direccion = prompt("Ingrerse su direccion");
-
-
-            let nuevo_usuario = new Usuario(nombre , apellido , doc_id, direccion);
-    
-            registro_usuario.push( nuevo_usuario );
-            console.log(registro_usuario);
-        }
-        nuevo_pedido()
-        
-    }else if(registro == "NO" || registro == "no" || registro == "No") {
-        nuevo_pedido()
-        
-        
-    }else (registro = prompt("No has ingresado una opcion valida. Ingresa Si o NO "))
-    
-
-
-
-
-
-
-console.log("Monto total del pedido es: " + precio_final)
-alert("Gracias por comprar en la tienda del club mas popular. Que disfutes tus productos. Total compra : " + precio_final )
+alert("FELICITACIONES! has acertado mi edad!")
