@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Adivina mi edad</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> TIENDA OFICIAL C.A. AGUADA</title>
+  <link rel="stylesheet" href="min.css" >
 </head>
 <body>
+    <h1 class="titulo">Bienvenido a la tienda oficial del Club Atlético Aguada</h1>
+        <center><img src="imagenes/Aguada.png" width=400px/> </center>
+    <hr>
+    <br>
+    <h2 style="text-align: center; color: green ">En esta tienda encontrarás todos los articulos del club más popular</h2>
+    <br>
+
+
+    <center><form id="nuevo_usuario" action="" method="GET">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="pone tu nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="pone tu Apellido" />   
+        <br>
+        <label for="doc_id ">Documento Identidad</label>
+        <input type="number" id="doc_id" placeholder="Solo Numeros" name="doc_id"></input> 
+        <br>
+       
+        <button id="registrarse">REGISTRARSE</button>
+        <button type="reset">RESETEAR</button>
+        <button  type="submit">REFRESCAR</button>
+        <div id="mensaje">
+
+        </div>
+
+    </center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+   
+    <hr>
+
+   <main class="contenedor"> 
+    <div class="contenedor-compra">
+            
+    </div>
+
+   
+    <hr>
+    <div class="listado-pedido">
+
+
+    </div>
+    </main>
+   
+
+
     <script src="diegoRivero.js"></script>
+    
 </body>
 </html>
