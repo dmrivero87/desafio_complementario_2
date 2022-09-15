@@ -10,7 +10,9 @@
     max-width: 900px;
 }
 
-
+.container.img{
+    height: auto;
+}
 .contenedor-compra{
     margin-top: 1rem;
     display: grid;
@@ -30,7 +32,18 @@
     outline: 1px solid red;
    
 }
-
+.card2 {
+    
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 45%;
+    border: solid 1px green;
+    border-radius: 10px;
+    color: red;
+    overflow: hidden;
+    outline: 1px solid red;
+   
+}
 .card img {
     width: 100%;
 }
@@ -57,12 +70,51 @@ button{
     outline: none;
     border: none;
     cursor: pointer;
+    
+    
 }
 .btn-comprar.btn-comprar:hover{
 background-color: green;
 
 }
+.btn-borrar {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius:  10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+}
+.btn-borrar.btn-borrar:hover{
+background-color: red;
 
+}
+.btn-borrar-fila {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius:  10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+}
+.btn-borrar-.btn-borrar-fila:hover{
+background-color: red;
+
+}
+.btn-compra {
+  background-color: green;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border-radius:  10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
 .titulo {
     text-align: center;
     color:red; 
@@ -81,7 +133,7 @@ background-color: green;
     margin-bottom: 1 rem;
 }
 
-table{
+.table{
    width: 100%;
    border-collapse: collapse;
 }
